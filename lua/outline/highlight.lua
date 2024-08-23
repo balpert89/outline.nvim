@@ -54,7 +54,6 @@ function M.details(bufnr, details)
     vim.api.nvim_buf_set_extmark(bufnr, M.ns.vt, index - 1, -1, {
       virt_text = { { detail, 'OutlineDetails' } },
       virt_text_pos = 'eol',
-      virt_text_win_col = 1,
       hl_mode = 'combine',
     })
   end
